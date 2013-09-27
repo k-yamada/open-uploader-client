@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'uploader/client/version'
+require 'uploader/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "open-uploader-client"
-  spec.version       = Uploader::Client::VERSION
+  spec.version       = Uploader::VERSION
   spec.authors       = ["Kazuhiro Yamada"]
   spec.email         = ["yamadakazu45@gmail.com"]
   spec.description   = %q{OpenUploaderClient}
@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "rest-client"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency 'rspec'
 end
