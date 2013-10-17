@@ -1,6 +1,6 @@
 # Open::Uploader::Client
 
-TODO: Write a gem description
+- This is client library for [open-uploader](https://github.com/k-yamada/open-uploader)
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    # image_upload_sample.rb
+    require 'open-uploader-client'
+    
+    @client = Uploader::Client.new("http://localhost:3000")
+    @client.item_create("sample image", "/path/to/image.png")
 
 ## Contributing
 
