@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'uploader/client'
+require 'open-uploader-client'
 
 RSpec.configure do |config|
   # some (optional) config here
